@@ -56,12 +56,14 @@ export default function Fruit({random, iskeyPressed}){
         <div className={classes.fruitContainer}>
             <h1 className={classes.header}>Fruits and vegetables</h1>
             <div className={classes.imgContainer}>
-              {iskeyPressed ?
+              {
+                iskeyPressed ?
               <div class="lds-ripple"><div></div><div></div></div>
-              : <img className={classes.img} src={image} alt={name} />}
+              : <img className={classes.img} src={image} alt="" />
+              }
                 
             </div>
-            <p className={classes.name}>{name}</p>
+            <p className={classes.name}>{!iskeyPressed && name}</p>
         </div>
     );
 }
