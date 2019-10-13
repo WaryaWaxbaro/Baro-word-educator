@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Baro-word-educator/static/css/main.1641798a.chunk.css",
+    "main.js": "/Baro-word-educator/static/js/main.69b62d97.chunk.js",
+    "main.js.map": "/Baro-word-educator/static/js/main.69b62d97.chunk.js.map",
+    "runtime-main.js": "/Baro-word-educator/static/js/runtime-main.8593f076.js",
+    "runtime-main.js.map": "/Baro-word-educator/static/js/runtime-main.8593f076.js.map",
+    "static/js/2.58c91f49.chunk.js": "/Baro-word-educator/static/js/2.58c91f49.chunk.js",
+    "static/js/2.58c91f49.chunk.js.map": "/Baro-word-educator/static/js/2.58c91f49.chunk.js.map",
+    "index.html": "/Baro-word-educator/index.html",
+    "precache-manifest.8e74c85c54f28813115a77743d088d3e.js": "/Baro-word-educator/precache-manifest.8e74c85c54f28813115a77743d088d3e.js",
+    "service-worker.js": "/Baro-word-educator/service-worker.js",
+    "static/css/main.1641798a.chunk.css.map": "/Baro-word-educator/static/css/main.1641798a.chunk.css.map",
+    "static/media/Carrot.png": "/Baro-word-educator/static/media/Carrot.4c44d6fe.png",
+    "static/media/Strawberry.png": "/Baro-word-educator/static/media/Strawberry.2b26f2d1.png",
+    "static/media/Tomatoes.png": "/Baro-word-educator/static/media/Tomatoes.f0ff3176.png",
+    "static/media/apple.png": "/Baro-word-educator/static/media/apple.e148eb42.png",
+    "static/media/bananas.png": "/Baro-word-educator/static/media/bananas.90fda5eb.png",
+    "static/media/brocoli.png": "/Baro-word-educator/static/media/brocoli.eb7d9ade.png",
+    "static/media/cucumber.png": "/Baro-word-educator/static/media/cucumber.bb207dc4.png",
+    "static/media/lime.png": "/Baro-word-educator/static/media/lime.2f4425df.png",
+    "static/media/orange.png": "/Baro-word-educator/static/media/orange.101a4987.png",
+    "static/media/watermelon.png": "/Baro-word-educator/static/media/watermelon.45e198ac.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8593f076.js",
+    "static/js/2.58c91f49.chunk.js",
+    "static/css/main.1641798a.chunk.css",
+    "static/js/main.69b62d97.chunk.js"
+  ]
+}
