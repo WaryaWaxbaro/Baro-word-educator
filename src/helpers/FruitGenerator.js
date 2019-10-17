@@ -1,13 +1,13 @@
-import Apple from '../img/apple.png';
-import Banana from '../img/bananas.png';
-import Brocoli from '../img/brocoli.png';
-import Carrot from '../img/Carrot.png';
-import Cucumber from '../img/cucumber.png';
-import Lime from '../img/lime.png';
-import Orange from '../img/orange.png';
-import Strawberry from '../img/Strawberry.png';
-import Tomatoes from '../img/Tomatoes.png';
-import Watermelon from '../img/watermelon.png';
+import Apple from '../img/FruitsAndVegetables/apple.png';
+import Banana from '../img/FruitsAndVegetables/bananas.png';
+import Brocoli from '../img/FruitsAndVegetables/brocoli.png';
+import Carrot from '../img/FruitsAndVegetables/Carrot.png';
+import Cucumber from '../img/FruitsAndVegetables/cucumber.png';
+import Lime from '../img/FruitsAndVegetables/lime.png';
+import Orange from '../img/FruitsAndVegetables/orange.png';
+import Strawberry from '../img/FruitsAndVegetables/Strawberry.png';
+import Tomatoes from '../img/FruitsAndVegetables/Tomatoes.png';
+import Watermelon from '../img/FruitsAndVegetables/watermelon.png';
 
 export default function allFruits(){
     return [

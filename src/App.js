@@ -1,5 +1,7 @@
-import React from 'react';
-import Fruits from './Fruits';
+import React, { useState } from 'react';
+import ComponentDetails from './components/ComponentDetails';
+import { Route, Switch } from 'react-router-dom';
+import ComponentList from './components/ComponentList';
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
@@ -18,7 +20,10 @@ function App() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Fruits />
+      <Switch>
+        <Route exact path="/:name" render={(rootProps) => <ComponentDetails {...rootProps}/>} />
+        <Route exact path="/" render={() => <ComponentList />} />
+      </Switch>
     </div>
   );
 }
