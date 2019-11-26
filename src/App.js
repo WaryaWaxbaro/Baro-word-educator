@@ -22,7 +22,7 @@ function App() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <HashRouter>
+      <HashRouter basename="/">
         <Navbar />
         <Container>
           <Switch>
