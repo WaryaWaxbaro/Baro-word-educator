@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b0165cc4f26e7a6e1c03271d5c4c2f8",
+    "revision": "a41f8af084fe90d10f2c048be49b3d33",
     "url": "/Baro-word-educator/index.html"
   },
   {
-    "revision": "98afcee07d7674007718",
-    "url": "/Baro-word-educator/static/css/main.1641798a.chunk.css"
+    "revision": "2ec3d9c40c3ada713553",
+    "url": "/Baro-word-educator/static/css/main.e8e11a68.chunk.css"
   },
   {
-    "revision": "51db9215d1a55c813522",
-    "url": "/Baro-word-educator/static/js/2.58c91f49.chunk.js"
+    "revision": "50164e02fd0fda3525ad",
+    "url": "/Baro-word-educator/static/js/2.ebdcf4c2.chunk.js"
   },
   {
-    "revision": "98afcee07d7674007718",
-    "url": "/Baro-word-educator/static/js/main.63babbea.chunk.js"
+    "revision": "2ec3d9c40c3ada713553",
+    "url": "/Baro-word-educator/static/js/main.c792e441.chunk.js"
   },
   {
     "revision": "3f7888654fedf9b88f04",
@@ -48,6 +48,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Baro-word-educator/static/media/cucumber.bb207dc4.png"
   },
   {
+    "revision": "8a559cee5d73bb607ff75aa961a4155a",
+    "url": "/Baro-word-educator/static/media/elephant.8a559cee.svg"
+  },
+  {
+    "revision": "b49c81bcce3e6e19e7f1b32c0ecc3076",
+    "url": "/Baro-word-educator/static/media/giraffe.b49c81bc.svg"
+  },
+  {
     "revision": "2f4425dfb0137f56a46ac34cf6ec41e2",
     "url": "/Baro-word-educator/static/media/lime.2f4425df.png"
   },
@@ -58,5 +66,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "45e198ac3adf83dc1ab43879ef7f24a5",
     "url": "/Baro-word-educator/static/media/watermelon.45e198ac.png"
+  },
+  {
+    "revision": "4fcf7ac3517cae865dafc5554e9a5c34",
+    "url": "/Baro-word-educator/static/media/zebra.4fcf7ac3.svg"
   }
 ]);
