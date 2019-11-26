@@ -4,7 +4,7 @@ import FrontPageListItem from './FrontPageListItem';
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
-  Link: {
+  LinkStyle: {
       textDecoration: 'none',
       color: 'red',
       fontSize: '1.6rem'
@@ -13,9 +13,9 @@ const useStyles = makeStyles({
 
 export default function FrontPageListLink({to, name}){
     const classes = useStyles();
-    const {Link} = classes;
+    const {LinkStyle} = classes;
     return(
-        <Link classesName={Link} to={to}>
+        <Link classesName={LinkStyle} to={to}>
             <FrontPageListItem name={name}/>
       </Link>
     )

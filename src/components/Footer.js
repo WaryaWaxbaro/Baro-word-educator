@@ -6,7 +6,18 @@ const useStyles = makeStyles({
       gridRow: '3 / span 1',
       gridColumn: '1 / -1',
       height: '4rem',
-      backgroundColor: 'blue'
+      zIndex: '2',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+
+      '& p': {
+        margin: '0',
+        padding: '0',
+        color: 'black',
+        textAlign: 'center',
+        fontSize: '1.6rem'
+      }
   }
 });
 
@@ -16,6 +27,7 @@ export default function Navbar(){
     
     return(
         <footer className={Footer}>
+            <p>Baro {new Date().getFullYear()}</p>
             
         </footer>
     )
