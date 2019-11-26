@@ -6,7 +6,6 @@ const useStyles = makeStyles({
       gridRow: '3 / span 1',
       gridColumn: '1 / -1',
       height: '4rem',
-      zIndex: '2',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -14,7 +13,7 @@ const useStyles = makeStyles({
       '& p': {
         margin: '0',
         padding: '0',
-        color: 'black',
+        color: '#0f3846',
         textAlign: 'center',
         fontSize: '1.6rem'
       }

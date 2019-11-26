@@ -1,14 +1,23 @@
 import React from "react";
-import useKeyPressState from "../../Hooks/useKeyPressState";
-import { wildAnimals } from "../../helpers/WildanimalGenerator";
+import {useKeyPressState} from "../../Hooks/useKeyPressState";
+import { wildAnimals } from "../../helpers/wildanimalGenerator";
 import ParentComponent from "../ParentComponent";
+import ChildComponent from "../ChildComponent";
+import { Loader } from "../Loader";
 
 export default function WildAnimals(props) {
-  const [iskeyPressed, random] = useKeyPressState(wildAnimals().length);
-  let name = wildAnimals()[random].name;
-  let image = wildAnimals()[random].image;
+  let num = wildAnimals().length;
+  const [random] = useKeyPressState(num);
+  const {name, image} = wildAnimals()[random];
+  console.log('random animals ', random);
 
   return (
-    <>{!iskeyPressed && <ParentComponent title="wild animals" src={image} name={name} />}</>
+    <ParentComponent title="wild animals">
+{/*       {iskeyPressed ? (
+        <Loader />
+      ) : (
+        <ChildComponent name={name} image={image}/>
+      )} */}
+    </ParentComponent>
   );
 }

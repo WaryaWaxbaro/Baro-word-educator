@@ -7,7 +7,7 @@ const useStyles = makeStyles({
     gridRow: "1 / span 1",
     gridColumn: "1 / -1",
     height: "8rem",
-    backgroundColor: "yellow",
+    backgroundColor: "#48c3ed",
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center'

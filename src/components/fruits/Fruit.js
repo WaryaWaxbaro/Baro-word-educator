@@ -1,7 +1,6 @@
 import React from 'react';
 import allFruits from '../../helpers/FruitGenerator';
 import { makeStyles } from '@material-ui/styles';
-import '../../styles/Fruit.css';
 
 const useStyles = makeStyles({
   fruitContainer: {

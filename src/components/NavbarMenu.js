@@ -11,13 +11,17 @@ const useStyles = makeStyles({
     marginLeft: "2rem",
     marginRight: "auto",
     fontSize: "3.5rem",
-    color: "black",
+    color: "#777",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     position: "relative",
     '& span': {
-        cursor: "pointer"
+        cursor: "pointer",
+
+        '&:hover': {
+          color: "#f7f7f7"
+        }
     }
   }
 });

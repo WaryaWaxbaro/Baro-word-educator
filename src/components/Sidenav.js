@@ -4,12 +4,12 @@ import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
     Sidebar: {
-        height: 'calc(100% - 12rem)',
+        height: 'calc(100% - 8rem)',
         position: 'fixed',
         top: '8rem',
         left: '0',
         marginBottom: '4rem',
-        backgroundColor: 'black',
+        backgroundColor: '#48c3ed',
         overflowX: 'hidden',
         transition: 'all .5s ease-out'
     },
@@ -49,9 +49,9 @@ export default function Sidenav({show}) {
 
   return <div className={isVisible}>
       <ul className={List}>
-          <li><Link>Home</Link></li>
+          <li><Link to="/">Home</Link></li>
           <li><Link>About</Link></li>
-          <li><Link>Catergories</Link></li>
+          <li><Link>Categories</Link></li>
       </ul>
   </div>;
 }

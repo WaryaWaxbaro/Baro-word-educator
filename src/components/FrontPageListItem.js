@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/styles";
 const useStyles = makeStyles({
   Card: {
     //width: "25rem",
+    backgroundColor: '#eaf8fd',
     padding: '1rem',
     margin: '2rem',
     height: "20rem",
@@ -13,7 +14,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     textDecoration: 'none',
-    color: '#191919',
+    color: '#1a5e75',
     fontSize: '1.6rem',
     cursor: 'pointer',
     boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
@@ -21,7 +22,7 @@ const useStyles = makeStyles({
 
     '&:hover': {
       boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
-      color: '#4c4c4c'
+      color: '#2484a4'
     }
   },
   Content: {

@@ -7,6 +7,7 @@ const useStyles = makeStyles({
   ParentComponent: {
     height: "100%",
     width: "100%",
+    color: "#0f3846",
     display: "flex",
     justifyContent: "center"
   },
@@ -18,34 +19,17 @@ const useStyles = makeStyles({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "space-between"
-  },
-  ImgContainer: {
-    width: "25rem",
-    height: "25rem"
-  },
-
-  Img: {
-    width: "25rem",
-    height: "25rem",
-    margin: 'auto'
-  },
-
-  Para: {
-    height: '5rem',
-    marginTop: "3rem",
-    fontSize: "1.6rem"
   }
 });
 
-export default function ParentComponent({ src, name, title }) {
+export default function ParentComponent({ children, title }) {
   const classes = useStyles();
-  const { ParentComponent, ParentItem, ImgContainer, Img, Para } = classes;
+  const { ParentComponent, ParentItem} = classes;
   return (
     <div className={ParentComponent}>
       <div className={ParentItem}>
         <Title title={title} />
-        <img className={Img} src={src} alt={name} />
-        <p className={Para}>{name}</p>
+        {children}
       </div>
     </div>
   );
