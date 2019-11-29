@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Sidenav from "./Sidenav";
 import { useToggleState } from "../Hooks/useToggleState";
 import { MdMenu, MdClose } from "react-icons/md";
@@ -16,12 +16,12 @@ const useStyles = makeStyles({
     alignItems: "center",
     justifyContent: "center",
     position: "relative",
-    '& span': {
-        cursor: "pointer",
+    "& span": {
+      cursor: "pointer",
 
-        '&:hover': {
-          color: "#f7f7f7"
-        }
+      "&:hover": {
+        color: "#f7f7f7"
+      }
     }
   }
 });
@@ -33,7 +33,7 @@ export default function NavbarMenu() {
   const { Menu } = classes;
   return (
     <div className={Menu}>
-      <span onClick={toggle}>{show ?  <MdClose /> : <MdMenu />}</span>
+      <span onClick={toggle}>{show ? <MdClose /> : <MdMenu />}</span>
       <Sidenav show={show} />
     </div>
   );

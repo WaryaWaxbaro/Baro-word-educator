@@ -24,7 +24,7 @@ const useStyles = makeStyles({
 
 export default function ParentComponent({ children, title }) {
   const classes = useStyles();
-  const { ParentComponent, ParentItem} = classes;
+  const { ParentComponent, ParentItem } = classes;
   return (
     <div className={ParentComponent}>
       <div className={ParentItem}>

@@ -1,3 +1,8 @@
-import React from 'react'
+import React from "react";
 
-export const Loader = () => <div class="lds-ripple"><div></div><div></div></div>;
+export const Loader = () => (
+  <div className="lds-ripple">
+    <div></div>
+    <div></div>
+  </div>
+);

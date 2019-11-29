@@ -1,40 +1,23 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from "react";
 
 export const useKeyPressState = initialVal => {
-  let val = initialVal;
-  const [random, setRandom] = useState(2);
-  const [currentVal, setCurrentVal] = useState(random);
-  const [loading, setLoading] = useState(false);
+  const [isKeyPressed, setIsKeyPressed] = useState(false);
+  const [random, setRandom] = useState(Math.floor(Math.random() * initialVal));
 
   useEffect(() => {
-    const spaceKeyPress = () => {
-      window.addEventListener('keypress', e => {
-        if(e.keyCode === 32){
-          //Set a random number
-          setRandom(() => {
-            let newRan = random;
-            console.log('initial val', newRan);
-            try {
-              //Try not to have previous random number to same again
-              while(newRan === random){
-                newRan = Math.floor(Math.random() * val);
-                //console.log('new ran', newRan, ' old ran ', random);
-              }
-            }
-            catch(e){
-              newRan = Math.floor(Math.random() * val);
-              //console.log('inside catch random ', newRan);
-            }
-            console.log('final val ', newRan);
-            return newRan;
-          });
-          console.log('key pressed');
-        }
-      });
-    }
+    let max = initialVal;
+    window.addEventListener("keypress", e => {
+      if (e.keyCode === 32) {
+        setRandom(Math.floor(Math.random() * max));
+        setTimeout(() => {
+          setIsKeyPressed(false);
+          // console.log("keyPressed");
+        }, 500);
+      }
+      setIsKeyPressed(true);
+      // console.log("keyPress false");
+    });
+  }, [initialVal]);
 
-    spaceKeyPress();
-  }, []);
-
-  return [random];
-}
+  return [isKeyPressed, random];
+};
