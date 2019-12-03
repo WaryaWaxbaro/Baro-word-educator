@@ -42,16 +42,16 @@ const useStyles = makeStyles({
     }
 })
 
-export default function Sidenav({show}) {
+export default function Sidenav({show, toggle}) {
     const classes = useStyles();
     const {Sidebar, isShown, NotShown, List} = classes;
     let isVisible = show ? `${Sidebar} ${isShown}` : `${Sidebar} ${NotShown}`;
 
   return <div className={isVisible}>
       <ul className={List}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link>About</Link></li>
-          <li><Link>Categories</Link></li>
+          <li onClick={toggle}><Link to="/">Home</Link></li>
+          <li onClick={toggle}><Link to="/">About</Link></li>
+          <li onClick={toggle}><Link to="/">Categories</Link></li>
       </ul>
   </div>;
 }

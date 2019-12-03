@@ -1,6 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
+import logo from '../img/logo.svg';
 import NavbarMenu from './NavbarMenu';
+import NavLanguage from './NavLanguage';
+
 
 const useStyles = makeStyles({
   Nav: {
@@ -20,5 +23,9 @@ export default function Navbar() {
 
   return <nav className={Nav}>
     <NavbarMenu />
+    <div>
+      <img src={logo} alt="logo" />
+    </div>
+    <NavLanguage />
   </nav>;
 }

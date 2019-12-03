@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../contexts/languageContext";
+import { pageName } from "../helpers/languages";
 import FrontPageListLink from "./FrontPageListLink";
+import { allFruits } from "../helpers/fruitGenerator";
+import { wildAnimals } from "../helpers/wildanimalGenerator";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
@@ -18,7 +22,7 @@ const useStyles = makeStyles({
     height: "100%",
     width: "100%",
     display: "grid",
-    gridTemplateRows: "20rem",
+    gridTemplateRows: "min-content",
     gridTemplateColumns: "repeat(auto-fit, minmax(30rem, 1fr))",
     rowGap: "2rem",
     columnGap: "2rem"
@@ -28,21 +32,18 @@ const useStyles = makeStyles({
 export default function FrontPageList(props) {
   const classes = useStyles();
   const { LinkContainer, LinkContent } = classes;
-  const goToLink = id => {
-    //props.history.push(`/${id}`);
-  };
+  const { lan } = useContext(LanguageContext);
+  const { fruits, wildanimals } = pageName[lan];
 
   return (
     <div className={LinkContainer}>
       <div className={LinkContent}>
-        <FrontPageListLink to="wildanimals" name="Wild Animals" />
-        <FrontPageListLink to="fruits" name="Fruits" />
-        <FrontPageListLink to="wildanimals" name="Wild Animals" />
-        <FrontPageListLink to="fruits" name="Fruits" />
-        <FrontPageListLink to="wildanimals" name="Wild Animals" />
-        <FrontPageListLink to="fruits" name="Fruits" />
-        <FrontPageListLink to="wildanimals" name="Wild Animals" />
-        <FrontPageListLink to="fruits" name="Fruits" />
+        <FrontPageListLink to="fruits" name={fruits} data={allFruits()['EN']} />
+        <FrontPageListLink
+          to="wildanimals"
+          name={wildanimals}
+          data={wildAnimals()['EN']}
+        />
       </div>
     </div>
   );

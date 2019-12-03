@@ -1,7 +1,7 @@
 import React from "react";
 import Sidenav from "./Sidenav";
 import { useToggleState } from "../Hooks/useToggleState";
-import { MdMenu, MdClose } from "react-icons/md";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
@@ -33,8 +33,8 @@ export default function NavbarMenu() {
   const { Menu } = classes;
   return (
     <div className={Menu}>
-      <span onClick={toggle}>{show ? <MdClose /> : <MdMenu />}</span>
-      <Sidenav show={show} />
+      <span onClick={toggle}>{show ? <MdChevronLeft /> : <MdChevronRight />}</span>
+      <Sidenav show={show} toggle={toggle}/>
     </div>
   );
 }

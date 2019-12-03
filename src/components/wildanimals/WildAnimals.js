@@ -6,10 +6,10 @@ import ChildComponent from "../ChildComponent";
 import { Loader } from "../Loader";
 
 export default function WildAnimals(props) {
-  let num = wildAnimals().length;
-  const [iskeyPressed, random] = useKeyPressState(num);
-  const { name, image } = wildAnimals()[random];
-
+  const { so } = wildAnimals();
+  let length = so.length;
+  const [iskeyPressed, random] = useKeyPressState(length);
+  const { name, image } = so[random];
   return (
     <ParentComponent title="wild animals">
       {iskeyPressed ? <Loader /> : <ChildComponent name={name} image={image} />}

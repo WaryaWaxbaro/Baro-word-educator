@@ -1,4 +1,5 @@
 import React from "react";
+import {lessThanTen} from "../helpers/helperMethods";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
@@ -7,7 +8,7 @@ const useStyles = makeStyles({
     backgroundColor: '#eaf8fd',
     padding: '1rem',
     margin: '2rem',
-    height: "20rem",
+    height: "22rem",
     borderRadius: '.5rem',
     display: 'flex',
     flexDirection: 'column',
@@ -28,22 +29,41 @@ const useStyles = makeStyles({
   Content: {
     height: "90%",
     width: '100%',
+    padding: "1rem",
+    display: 'grid',
+    gridTemplateRows: "repeat(3, 1fr)",
+    gridTemplateColumns: "repeat(4, 1fr)",
+    gridGap: ".5rem",
+    "& img": {
+      width: "90%",
+      height: "90%",
+      transition: "all .4s ease-out",
+
+      "&:hover": {
+        transform: "scale(1.2)"
+      }
+    }
   },
   Name: {
     textAlign: "center",
     fontSize: "1.6rem",
     justifySelf: "flex-start",
-    textTransform: 'uppercase',
-    marginBottom: 0
+    textTransform: 'uppercase'
   }
 });
 
-export default function FrontPageListItem({ name }) {
+export default function FrontPageListItem({ name, data }) {
   const classes = useStyles();
   const { Card, Content, Name } = classes;
   return (
     <div className={Card}>
-      <div className={Content}>Container place</div>
+      <div className={Content}>
+        {
+          lessThanTen(data).map((d, i) => (
+            <img key={i} src={d.image} alt={d.name}/>
+          ))
+        }
+      </div>
       <h1 className={Name}>{name}</h1>
     </div>
   );

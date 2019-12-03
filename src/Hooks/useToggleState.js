@@ -5,7 +5,6 @@ export const useToggleState = initialVal => {
 
     const toggle = () => {
         setState(!state);
-        console.log('is toggling');
     }
 
     return [state, toggle];

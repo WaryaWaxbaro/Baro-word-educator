@@ -6,6 +6,7 @@ import Container from "./components/Container";
 import { makeStyles } from "@material-ui/styles";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { LanguageProvider } from "./contexts/languageContext";
 
 const useStyles = makeStyles({
   root: {
@@ -23,18 +24,20 @@ function App() {
   return (
     <div className={classes.root}>
       <HashRouter basename="/">
-        <Navbar />
-        <Container>
-          <Switch>
-            <Route
-              exact
-              path="/:name"
-              render={rootProps => <ActiveRoute {...rootProps} />}
-            />
-            <Route exact path="/" render={() => <FrontPageList />} />
-          </Switch>
-        </Container>
-        <Footer />
+        <LanguageProvider>
+          <Navbar />
+          <Container>
+            <Switch>
+              <Route
+                exact
+                path="/:name"
+                render={rootProps => <ActiveRoute {...rootProps} />}
+              />
+              <Route exact path="/" render={() => <FrontPageList />} />
+            </Switch>
+          </Container>
+          <Footer />
+        </LanguageProvider>
       </HashRouter>
     </div>
   );

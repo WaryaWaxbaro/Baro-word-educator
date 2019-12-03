@@ -1,7 +1,6 @@
 import React from "react";
 import { Title } from "./Title";
 import { makeStyles } from "@material-ui/styles";
-import { MdAutorenew } from "react-icons/md";
 
 const useStyles = makeStyles({
   ParentComponent: {
