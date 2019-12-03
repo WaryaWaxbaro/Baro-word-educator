@@ -50,7 +50,7 @@ export default function Sidenav({show, toggle}) {
   return <div className={isVisible}>
       <ul className={List}>
           <li onClick={toggle}><Link to="/">Home</Link></li>
-          <li onClick={toggle}><Link to="/">About</Link></li>
+          <li onClick={toggle}><Link to="/about">About</Link></li>
           <li onClick={toggle}><Link to="/">Categories</Link></li>
       </ul>
   </div>;
