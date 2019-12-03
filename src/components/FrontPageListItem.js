@@ -8,7 +8,7 @@ const useStyles = makeStyles({
     backgroundColor: '#eaf8fd',
     padding: '1rem',
     margin: '2rem',
-    height: "22rem",
+    height: "25rem",
     borderRadius: '.5rem',
     display: 'flex',
     flexDirection: 'column',
@@ -35,8 +35,9 @@ const useStyles = makeStyles({
     gridTemplateColumns: "repeat(4, 1fr)",
     gridGap: ".5rem",
     "& img": {
-      width: "90%",
-      height: "90%",
+      width: "100%",
+      height: "8vh",
+      paddingTop: ".5rem",
       transition: "all .4s ease-out",
 
       "&:hover": {
