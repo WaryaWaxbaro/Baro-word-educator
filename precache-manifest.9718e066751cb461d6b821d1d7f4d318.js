@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1e914bf6f424aa355ad37491368e7924",
+    "revision": "530d16722af2b46989df27be030bde02",
     "url": "/Baro-word-educator/index.html"
   },
   {
-    "revision": "268dfa30a3c8de86a751",
+    "revision": "0e39200a12d6d388a6fd",
     "url": "/Baro-word-educator/static/css/main.a2b71b69.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Baro-word-educator/static/js/2.a80e1275.chunk.js"
   },
   {
-    "revision": "268dfa30a3c8de86a751",
-    "url": "/Baro-word-educator/static/js/main.0e6c3cd6.chunk.js"
+    "revision": "0e39200a12d6d388a6fd",
+    "url": "/Baro-word-educator/static/js/main.4be81b6f.chunk.js"
   },
   {
     "revision": "3f7888654fedf9b88f04",
