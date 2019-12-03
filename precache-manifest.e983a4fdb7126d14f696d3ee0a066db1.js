@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05c8d00ab4d17057e043a2195346b34e",
+    "revision": "1e914bf6f424aa355ad37491368e7924",
     "url": "/Baro-word-educator/index.html"
   },
   {
