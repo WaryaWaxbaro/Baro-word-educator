@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Baro-word-educator/precache-manifest.319dc6e49934b2cc365f1f2f6b269b89.js"
+  "/Baro-word-educator/precache-manifest.f1929c61473c89cb6935f0bed33f65ba.js"
 );
 
 self.addEventListener('message', (event) => {

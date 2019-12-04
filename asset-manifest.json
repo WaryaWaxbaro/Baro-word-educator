@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Baro-word-educator/static/css/main.a2b71b69.chunk.css",
-    "main.js": "/Baro-word-educator/static/js/main.927082b3.chunk.js",
-    "main.js.map": "/Baro-word-educator/static/js/main.927082b3.chunk.js.map",
+    "main.js": "/Baro-word-educator/static/js/main.10350d45.chunk.js",
+    "main.js.map": "/Baro-word-educator/static/js/main.10350d45.chunk.js.map",
     "runtime-main.js": "/Baro-word-educator/static/js/runtime-main.8593f076.js",
     "runtime-main.js.map": "/Baro-word-educator/static/js/runtime-main.8593f076.js.map",
     "static/js/2.a80e1275.chunk.js": "/Baro-word-educator/static/js/2.a80e1275.chunk.js",
     "static/js/2.a80e1275.chunk.js.map": "/Baro-word-educator/static/js/2.a80e1275.chunk.js.map",
     "index.html": "/Baro-word-educator/index.html",
-    "precache-manifest.319dc6e49934b2cc365f1f2f6b269b89.js": "/Baro-word-educator/precache-manifest.319dc6e49934b2cc365f1f2f6b269b89.js",
+    "precache-manifest.f1929c61473c89cb6935f0bed33f65ba.js": "/Baro-word-educator/precache-manifest.f1929c61473c89cb6935f0bed33f65ba.js",
     "service-worker.js": "/Baro-word-educator/service-worker.js",
     "static/css/main.a2b71b69.chunk.css.map": "/Baro-word-educator/static/css/main.a2b71b69.chunk.css.map",
     "static/media/antelope.svg": "/Baro-word-educator/static/media/antelope.41276699.svg",
@@ -49,6 +49,6 @@
     "static/js/runtime-main.8593f076.js",
     "static/js/2.a80e1275.chunk.js",
     "static/css/main.a2b71b69.chunk.css",
-    "static/js/main.927082b3.chunk.js"
+    "static/js/main.10350d45.chunk.js"
   ]
 }
